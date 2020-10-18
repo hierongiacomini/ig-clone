@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fafafa;
+}
+.left {
+    background-image: url(../img/background.png);
+    background-size: 454px 618px;
+    width: 454px;
+    height: 618px;
+    display: inline-block;
+}
+.fundo{
+    margin: 99px 0 0 151px;
+    position: relative;
+}
+.fundo > *{
+    background-repeat: no-repeat;
+    height: 427px;
+    width: 355px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.fundo >:nth-child(1){
+    background-image: url(../img/screen1.jpg);
+    z-index: 2;
+}
+.fundo >:nth-child(2){
+    background-image: url(../img/screen2.jpg);
+}
+.fundo >:nth-child(3){
+    background-image: url(../img/screen3.jpg);
+}
+.fundo >:nth-child(4){
+    background-image: url(../img/screen4.jpg);
+}
+.fundo >:nth-child(5){
+    background-image: url(../img/screen5.jpg);
+}
+.screen-hide{
+    transition: opacity ease-in-out 2s;
+    opacity: 0;
+}
+.right{
+    width: 350px;
+}
+.card1{
+    height: 380px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo{
+    width: 175px;
+    height: 51px;
+    background-image: url(../img/logo.png);
+    background-position: 0 -130px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.email{
+    height: 38px;
+    border: 1px solid #dbdbdb;
+    width: 268px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+.email input{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+.senha{
+    height: 38px;
+    border: 1px solid #dbdbdb;
+    width: 268px;
+    margin-bottom: 14px;
+    display: flex;
+    padding-left: 8px;
+}
+.senha input{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+.senha .input{
+    flex-grow: 1;
+}
+.senha .mostrar{
+    line-height: 38px;
+    justify-self: flex-end;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.tips{
+    padding-top:5px;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 9px;
+}
+.entrar{
+    width: 268px;
+    height: 31px;
+    text-align: center;
+    line-height: 31px;
+    color: white;
+    background-color: #0095f6;
+    border-radius: 4px;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    cursor: pointer;
+}
+.mostrar:hover, .entrar:hover{
+    opacity: .8;
+}
+.card2{
+    height: 63px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    font-family:BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+.card2  a{
+    font-weight: 500;
+    color: #0095f6;
+    text-decoration: none;
+}
+.card3{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.msg{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ou{
+    display: flex;
+    margin-top: 15px;
+}
+.ouText{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(163, 163, 163);
+    font-family:BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 450px;
+    font-weight: 500;
+}
+.hr{
+    border-top: 1px solid rgb(194, 192, 192);
+    flex-grow: 2;
+    height: 2px;
+    margin-top: 8px;
+    width: 113px;
+    
+}
+.esqueceu{
+    font-family:BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+.outros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.icon{
+    background-image: url(../img/logo.png);
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+    margin-bottom: 20px;
+}
+.facebook{
+    display: flex;
+}
+.iconText{
+    height: 16px;
+    line-height: 16px;
+    color: darkblue;
+    font-family:BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+@media (max-width:768px){
+    .left{
+        display: none;
+    }
+}
